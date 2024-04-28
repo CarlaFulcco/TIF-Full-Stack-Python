@@ -1,19 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-image: url(control_de_ingresos.png);
+    background-image: url(../src/image/control_de_ingresos.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 200vh;}
+    background-size: 200vh;
+    filter: brightness(1.2);
+}
 
-    nav{
+    #nav-anclaje{
         background-color: rgb(2, 67, 2);
         color: wheat;
-        display: block;
         height: 1rem;
         padding: 2rem;
         position: sticky;
         top: 0;
         z-index: 10;
-
     }
+    
+        #nav-anclaje ul{
+            list-style-type: none;
+            padding: 1em;
+        }
+    
+        #nav-anclaje ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #nav-anclaje ul li:last-child{
+        margin-right: 0;
+    }
+
+    #nav-anclaje ul a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+    }
+
+    #nav-anclaje.links{
+        margin: 0 0.5rem;
+        vertical-align: baseline;
+
+    } 
+            
+    input[type="radio"] {
+        display: block;
+    margin-right: 10px;
+}
 
     
