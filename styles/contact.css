@@ -19,7 +19,7 @@ img {
 }
 
 body {
-    background-image: url(imagen_contacto.jpg);
+    background-image: url(../src/image/imagen_contacto.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
