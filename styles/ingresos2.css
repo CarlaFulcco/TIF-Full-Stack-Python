@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 3.1em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #0E46A3;
+}
+
+button:hover{
+    background-color: #08285c;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header{
+    background-color: #F1F6F9;
+}
+
+header .logo{
+    margin: 0;
+}
+
+header .marca{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 6em;
+    color: #14274E;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color:#0E46A3;
+}
+
+.login{
+    margin: 0 auto;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(/src/images/control_de_ingresos.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#ingresa{
+    background-color: rgb(210, 210, 210);
+    text-align: center;
+}
+
+#ingresa .container{
+    padding: 150px 12px;
+}
+
+#ingresa h2{
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+#ingresa h3{
+    color: white;
+}
+
+#ingresa p{
+    display: none;
+}
+
+#ingresa .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,1);
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(/src/images/imagen_contacto.jpg);
+
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(/src/images/imagen_main.jpg);
+
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(/src/images/control_de_ingresos.png);
+
+}
+
+footer{
+    background-color: #F1F6F9;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .container .color-acento{
+        font-weight: bold;
+        color: #0E46A3;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+        
+
+    }
+
+    #hero{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 90vh;
+background-color: #394867;
+background-position: bottom;
+background-size: cover;
+
+    }
+    #hero h1{
+        
+        font-size: 4.2em;
+
+    }
+    #ingresa .ingresando{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #ingresa .ingresando .card{
+        width: 30%;
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-position-y: 0;
+        box-shadow: 2px 2px 10px rgba(0,0,0,1);
+
+    }
+
+    #ingresa .ingresando .card button{
+        background-position-y: bottom;
+    }
+
+    #ingresa .card{
+        background-position: center top;
+        background-size: cover;
+    }
+
+    /* .card:first-child{
+        background-color: #394867;
+    }
+    .card:nth-child(2){
+        background-color: #394867;
+    }
+    .card:nth-child(3){
+        background-color: #394867;
+    } 
+    Estos los dejo para el 2° corte del media x si queremos cambiar a un back color en lugar de imagen*/
+
+    #ingresa p{
+        display: block;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    #ingresa h3{
+        margin-top: 0;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
