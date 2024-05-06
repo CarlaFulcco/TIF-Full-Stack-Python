@@ -1,52 +1,79 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+/*html{
+    scroll-behavior: smooth;
+}
+:root{ --background-image: url(../src/image/control_de_ingresos.png);
+}*/
 
 body {
-    background-image: url(../src/image/control_de_ingresos.png);
+    background-image: url(../src/images/control_de_ingresos.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 200vh;
-    filter: brightness(1.2);
+    background-size: cover;
+    font-family: 'Rooto'sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-font-smoothing: antialiased;
+    /*z-index: 10;*/
 }
 
-    #nav-anclaje{
-        background-color: rgb(2, 67, 2);
-        color: wheat;
-        height: 1rem;
-        padding: 2rem;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    
-        #nav-anclaje ul{
-            list-style-type: none;
-            padding: 1em;
-        }
-    
-        #nav-anclaje ul li {
-        display: inline-block;
-        margin-right: 20px;
-    }
+h1{font-size: 3.5em;}
+h2{font-size: 3.1em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
 
-    #nav-anclaje ul li:last-child{
-        margin-right: 0;
-    }
 
-    #nav-anclaje ul a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 16px;
-    }
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
 
-    #nav-anclaje.links{
-        margin: 0 0.5rem;
-        vertical-align: baseline;
+.marca {
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 6em;
+    color: #14274E;
+}
 
-    } 
-            
+
+.header-contenedor {
+    /*padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/ 
+    margin: auto; 
+    max-width: 1100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    /*position: sticky;*/
+    display: flex;
+    /*flex-direction: column;*/
+    text-align: center;
+    /*z-index: 1000;*/ 
+    padding-bottom: 25px; 
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}    
+
+a {
+    padding: 5px 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    color:#0E46A3;
+}
+  
+main{
+    margin-top: 100px;
+}
     input[type="radio"] {
         display: block;
     margin-right: 10px;
