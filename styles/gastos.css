@@ -4,18 +4,13 @@
     box-sizing: border-box;
 }
 
-/*html{
-    scroll-behavior: smooth;
-}
-:root{ --background-image: url(../src/image/control_de_ingresos.png);
-}*/
 
 body {
     background-image: url(../src/images/control_de_ingresos.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: cover;
-    font-family: 'Roboto'sans-serif;
+    font-family: 'Roboto', sans-serif; 
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-font-smoothing: antialiased;
     /*z-index: 10;*/
@@ -27,42 +22,46 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 
 
-header {
-    background-color: rgba(255, 255, 255, 0.8); 
+.header-contenedor {
+    background-color: rgb(241, 246, 249, 0.8); 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.marca {
-    padding: 25px 30px;
+.logo-contenedor, 
+.marca-contenedor, .nav-contenedor {
+    margin: 0 10px;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.marca{
+    padding: 25px 10px 25px 40px;
     font-weight: bold;
     font-size: 6em;
     color: #14274E;
     font-family: 'Roboto', sans-serif;
-}
-
-
-.header-contenedor {
-    /*padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/ 
-    margin: auto; 
-    max-width: 1100px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 nav {
-    /*position: sticky;*/
     display: flex;
-    /*flex-direction: column;*/
-    text-align: center;
-    /*z-index: 1000;*/ 
-    padding-bottom: 25px; 
-    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+    padding-top: 25px;
+    padding-right: 5px;
+    
 }    
 
 a {
-    padding: 5px 12px;
+    padding: 10px 12px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -71,9 +70,29 @@ a {
 a:hover{
     color:#0E46A3;
 }
-  
 main{
     margin-top: 100px;
+}
+
+.main-contenedor{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#titulo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 10vh;
+    color: #14274E;
+    text-decoration-line: overline;
+    padding: 10px;
+    margin: 5px;
 }
     input[type="radio"] {
         display: inline-block;
