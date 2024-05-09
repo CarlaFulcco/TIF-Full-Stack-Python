@@ -72,6 +72,10 @@ header a:hover{
     color:#0E46A3;
 }
 
+nav {
+    height: 50px;;
+}
+
 .login{
     margin: 0 auto;
 }
@@ -111,12 +115,11 @@ footer p{
     
 }
 
-footer .container2 h4 {
+footer .container2 h4 img {
     position: fixed;
     display: inline-block;
     flex-direction: row-reverse;
 }
-
 
 footer .color-acento{
     font-weight: bold;
