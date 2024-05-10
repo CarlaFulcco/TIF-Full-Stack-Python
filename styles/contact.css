@@ -1,16 +1,12 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body{
-     margin: 0;
-
      font-family: 'Roboto', sans-serif;
 }
-
 
 h2{font-size: 3.1em;}
 p{font-size: 1.25em;}
@@ -75,9 +71,35 @@ header a:hover{
 }
 
 form {
-    padding: 180px;
-    height: 200px;
+    margin: auto;
+    padding: 30px;
+    width: 400;
+    border-radius: 4px;
     display: grid;
+    justify-content: center;
+    background-image: url(../src/images/imagen_contacto.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    opacity: 0.8;
+
+}
+
+.controls {
+
+}
+
+label, input, textarea {
+    display: grid;
+    box-sizing: border-box;
+    border-color: black;
+
+}
+
+p {
+    color: rgb(15, 15, 15);
+    text-align: left;
 }
 
 .login{
@@ -85,27 +107,34 @@ form {
 }
 
 footer{
+    min-height: 70px;
+    color:black;
     background-color: #F1F6F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 footer p{
     margin: 0;
     padding: 12px;
+    
 }
 
-footer .container{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+footer .container2 h4 img {
+    position: fixed;
+    display: inline-block;
+    flex-direction: row-reverse;
 }
 
-footer .container .color-acento{
-        font-weight: bold;
-        color: #0E46A3;
+footer .color-acento{
+    font-weight: bold;
+    color: #0E46A3;
+    height: 50px;
 }
 
-@media (min-width: 720px){
+
+/*@media (min-width: 720px){
 
     header{
         position: fixed;
@@ -130,44 +159,3 @@ footer .container .color-acento{
 }
 
 
-
-
-
-
-header, footer {
-    padding: 25px;
-    text-align: center;
-}
-
-div,a {
-    text-align: right;
-}
-
-
-body {
-    background-image: url(../src/images/imagen_contacto.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-form {
-    color: white;
-    
-    opacity: 0.8;
-    display:list-item;
-    
-    
-}
-label, input, textarea {
-    display: grid;
-    box-sizing: border-box;
-    border-color: black;
-
-}
-
-p {
-    color: white;
-    text-align: left;
-}
