@@ -22,28 +22,62 @@
             </nav>
         </div>
     </header>
+
     <h2>Contacto</h2>
     
     <form action="" method="get">
 
         <label for="Nombre">Nombre</label>
-        <input id="Nombre" type="text" name="name">
+        <input id="Nombre" type="text" name="name" placeholder="Ingrese su Nombre">
 
         <label for="Apellido">Apellido</label>
-        <input id="Apellido" type="text" name="lastname">
+        <input id="Apellido" type="text" name="lastname" placeholder="Ingrese su Apellido">
 
+        <label>Fecha de nacimiento</label>
+        <input type="date">
+
+        <label>Nacionalidad</label>
+        <select name="" id="">
+            <option value="">Argentina</option>
+            <option value="">Francia</option>
+            <option value="">Uruguay</option>
+            <option value="">Brasil</option>
+            <option value="">Mexico</option>
+        </select>
+
+        <label>Género</label>
+        <input type="radio" name="genero">Masculino
+        <input type="radio" name="genero">Femenino
+        <input type="radio" name="genero">No Binario 
+        <input type="radio" name="genero">Otro
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email" placeholder="Ingrese su Email">
 
         <label>Consultas:</label>
-        <textarea name="comentario" rows="10" cols="50" maxlength="300">Ingrese su consulta...</textarea>
+        <textarea name="comentario" rows="10" cols="40" maxlength="300" placeholder="Ingrese su consulta"></textarea>
+
+        <input type="checkbox">Acepto Terminos y Condiciones
 
         <input type="submit">
 
     </form>
-    <br><br><br><br>
     <p>Comunicate con nuestro equipo: <a href=mailto:contact@example.com>contacto@controldegastos.com</p>
     
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
     <footer>
-        Derechos reservados ®2024
+
+        <div class="container2">
+            <h4>Siguenos</h4>         
+            <img src="../TIF-Full-Stack-Python/src/images/logo-facebook.png" alt="" width="25px"></a>
+            <img src="../TIF-Full-Stack-Python/src/images/logo-instagram.png" alt="" width="25px">
+            <img src="../TIF-Full-Stack-Python/src/images/logo-X.png" alt="" width="25px">                                 
+        </div>
+
+        <p>&copy; <span class="color-acento">Boni!</span> 2024</p>
+        
     </footer>
     
 </body>
