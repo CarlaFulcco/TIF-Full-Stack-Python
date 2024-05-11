@@ -1,10 +1,9 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
+    margin: 0;
      font-family: 'Roboto', sans-serif;
 }
 
@@ -12,7 +11,7 @@ h2{font-size: 3.1em;}
 p{font-size: 1.25em;}
 
 button{
-    font-size: 0.5em;
+    font-size: 1.5em;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 10px;
@@ -40,7 +39,7 @@ header .logo{
 
 header .marca{
     margin: 0;
-    padding: 5px;
+    padding: 2px 30px;
     font-weight: bold;
     font-size: 6em;
     color: #14274E;
@@ -70,6 +69,14 @@ header a:hover{
     color:#0E46A3;
 }
 
+nav {
+    height: 50px;;
+}
+
+.login{
+    margin: 0 auto;
+}
+
 form {
     margin: auto;
     padding: 30px;
@@ -77,16 +84,24 @@ form {
     border-radius: 4px;
     display: grid;
     justify-content: center;
-    background-image: url(../src/images/imagen_contacto.jpg);
+    color: black;
+    background-image:url(../src/images/imagen_contacto.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: black;
-    opacity: 0.8;
-
 }
 
 .controls {
+    width: 100%;
+    background-color: #24303c;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 4px; /*pone los bordes redondos*/
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+
 
 }
 
@@ -107,7 +122,7 @@ p {
 }
 
 footer{
-    min-height: 70px;
+    min-height: 70px; /*por que?*/
     color:black;
     background-color: #F1F6F9;
     display: flex;
