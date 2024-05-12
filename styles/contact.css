@@ -40,6 +40,8 @@ header{
 
 header .logo{
     margin: 0;
+    
+    
 }
 
 header .marca{
@@ -53,6 +55,8 @@ header .marca{
 header .container{
     display: flex;;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 header nav{
@@ -86,6 +90,7 @@ section {
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.8;
+    
 }
 
 form {
@@ -197,10 +202,14 @@ form .button {
 }
 
 footer{
-    margin: 10px;
-     /*por que?*/
+    width: 100%;
+    height: auto;
+
     color:black;
     background-color: #F1F6F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   
 }
 
@@ -208,11 +217,12 @@ footer p{
     margin: 0;
     padding: 12px;
     
+    
 }
 
 footer .container2 h4 img {
     position: fixed;
-    display: inline-block;
+    display: inline;
     flex-direction: row-reverse;
 }
 
@@ -220,6 +230,7 @@ footer .color-acento{
     font-weight: bold;
     color: #0E46A3;
     height: 50px;
+    position: end;
 }
 
 
