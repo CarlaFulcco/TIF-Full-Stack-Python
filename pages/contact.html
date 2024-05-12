@@ -22,50 +22,78 @@
             </nav>
         </div>
     </header>
+    <section>
+        <form action="mailto:contact@example.com" method="get">
+            <h2>Contacto</h2>
+            
+            <div class="form">
+                <li>
+                    <label for="Nombre">Nombre</label>
+                    <input id="nombre" class="controls" type="text" name="name" placeholder="Ingrese su Nombre">
+                </li>
+                
+                <li>
+                    <label for="Apellido">Apellido</label>
+                    <input id="Apellido" class="controls" type="text" name="lastname" placeholder="Ingrese su Apellido">
+                
+                </li>
+
+                <li>
+                    <label>Fecha de nacimiento</label>
+                    <input class="controls" type="date">
     
-    <form action="mailto:contact@example.com" method="get">
-        <h2>Contacto</h2>
+                </li>
 
-        <label for="Nombre">Nombre</label>
-        <input id="Nombre" class="controls" type="text" name="name" placeholder="Ingrese su Nombre">
+                <li>
+                    <label>Nacionalidad</label>
+                    <select name="" id="">
+                        <option value="">Argentina</option>
+                        <option value="">Francia</option>
+                        <option value="">Uruguay</option>
+                        <option value="">Brasil</option>
+                        <option value="">Mexico</option>
+                    </select>
+                </li>
 
-        <label for="Apellido">Apellido</label>
-        <input id="Apellido" class="controls" type="text" name="lastname" placeholder="Ingrese su Apellido">
+                <li>
+                    <label>Género</label>
+                    
+                    <input type="radio" name="genero">
+                    <label>Masculino</label>
+                    <input type="radio" name="genero">
+                    <label>Femenino</label>
+                    <input type="radio" name="genero">
+                    <input type="text" placeholder="Otro">
+                </li>
 
-        <label>Fecha de nacimiento</label>
-        <input class="controls" type="date">
+                <li>
+                    <label>Email</label>
+                    <input class="controls" type="email" placeholder="Ingrese su Email">
+                </li>
+            </div>
 
-        <label>Nacionalidad</label>
-        <select name="" id="">
-            <option value="">Argentina</option>
-            <option value="">Francia</option>
-            <option value="">Uruguay</option>
-            <option value="">Brasil</option>
-            <option value="">Mexico</option>
-        </select>
+            <li>
+                <label class="checkbox">
+                    <input type="checkbox">Acepto <a href="#">Terminos y Condiciones</a> 
+                </label>
+            </li>
+            
+            <li>
+                <label class="consultas">Consultas: 
+                    <textarea class="textarea" name="comentario" rows="3" cols="150" maxlength="300" 
+                    placeholder="Ingrese su consulta"></textarea>
+                </label>
+            </li>
 
-        <label>Género</label>
-        <input type="radio" name="genero">Masculino
-        <input type="radio" name="genero">Femenino
-        <input type="radio" name="genero">No Binario 
-        <input type="radio" name="genero">Otro
-        <input type="text">
-
-        <label>Email</label>
-        <input class="controls" type="email" placeholder="Ingrese su Email">
-
-        <label>Consultas:</label>
-        <textarea class="controls" name="comentario" rows="10" cols="40" maxlength="300" placeholder="Ingrese su consulta"></textarea>
-
-        <label>
-            <input type="checkbox">Acepto Terminos y Condiciones
-        </label>
-
-        <button><input type="submit" value="Enviar"></button>
-
-        <p>Comunicate con nuestro equipo: <a href=mailto:contact@example.com>contacto@controldegastos.com</p>
+           
     
-    </form>        
+            <input class="button" type="submit" value="Enviar">
+    
+            <p>Comunicate con nuestro equipo: <a href=mailto:contact@example.com>contacto@bonigastos.com</p>
+        
+        </form>        
+    </section>
+    
     
     <footer>
 
