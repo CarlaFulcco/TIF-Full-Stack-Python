@@ -4,44 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel ="icon" href="../src/image/logo_png.ico">
     <link rel="stylesheet" href="../styles/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="icon" href="../src/images/Copia de LogotipoG14e.png">
    
 </head>
 <body>
     <header>
-        <div id="logo" class="img" >
-            <img src="logo png-fotor-bg-remover-20240420154555.png" alt="logo">
-            <a id="login" href="#">login</a>
-        </div>  
-        <h1>Control de gastos</h1> 
+        <div class="container">
+            <img class="logo" src="../src/images/LogotipoG14a.png" width="80px" height="60px" alt="logo">
+            <p class="marca">Boni!</p>
+            <nav>
+                <a href="../ingresos2.html">Ingresos</a>
+                <a href="../pages/gastos.html">Egresos</a>
+                <a href="../pages/contact.html">Contacto</a>
+                <a href="#"><img class="login" src="../src/images/login3.png" width="30px" height="30px"
+                        alt="loginete"></a>
+            </nav>
+        </div>
     </header>
+    <section>
+        <form action="mailto:contact@example.com" method="get">
+            <h2>Contacto</h2>
+            
+            <div class="form">
+                <li>
+                    <label for="Nombre">Nombre</label>
+                    <input id="nombre" class="controls" type="text" name="name" placeholder="Ingrese su Nombre">
+                </li>
+                
+                <li>
+                    <label for="Apellido">Apellido</label>
+                    <input id="Apellido" class="controls" type="text" name="lastname" placeholder="Ingrese su Apellido">
+                
+                </li>
 
-    <h2>Contacto</h2>
+                <li>
+                    <label>Fecha de nacimiento</label>
+                    <input class="controls" type="date">
     
-    <form action="" method="get">
+                </li>
 
-        <label for="Nombre">Nombre</label>
-        <input id="Nombre" type="text" name="name">
+                <li>
+                    <label>Nacionalidad</label>
+                    <select name="" id="">
+                        <option value="">Argentina</option>
+                        <option value="">Francia</option>
+                        <option value="">Uruguay</option>
+                        <option value="">Brasil</option>
+                        <option value="">Mexico</option>
+                    </select>
+                </li>
 
-        <label for="Apellido">Apellido</label>
-        <input id="Apellido" type="text" name="lastname">
+                <li>
+                    <label>Género</label>
+                    
+                    <input type="radio" name="genero">
+                    <label>Masculino</label>
+                    <input type="radio" name="genero">
+                    <label>Femenino</label>
+                    <input type="radio" name="genero">
+                    <input type="text" placeholder="Otro">
+                </li>
 
+                <li>
+                    <label>Email</label>
+                    <input class="controls" type="email" placeholder="Ingrese su Email">
+                </li>
+            </div>
 
-        <label>Consultas:</label>
-        <textarea name="comentario" rows="10" cols="50" maxlength="300">Ingrese su consulta...</textarea>
+            <li>
+                <label class="checkbox">
+                    <input type="checkbox">Acepto <a href="#">Terminos y Condiciones</a> 
+                </label>
+            </li>
+            
+            <li>
+                <label class="consultas">Consultas: 
+                    <textarea class="textarea" name="comentario" rows="3" cols="150" maxlength="300" 
+                    placeholder="Ingrese su consulta"></textarea>
+                </label>
+            </li>
 
-        <input type="submit">
-
-    </form>
-    <br><br><br><br>
-    <p>Comunicate con nuestro equipo: <a href=mailto:contact@example.com>contacto@controldegastos.com</p>
+           
+    
+            <input class="button" type="submit" value="Enviar">
+    
+            <p>Comunicate con nuestro equipo: <a href=mailto:contact@example.com>contacto@bonigastos.com</p>
+        
+        </form>        
+    </section>
+    
     
     <footer>
-        Derechos reservados ®2024
+
+        <div class="container2">
+            <h4>Siguenos</h4>         
+            <img src="../src/images/logo-facebook.png" alt="" width="25px"></a>
+            <img src="../src/images/logo-instagram.png" alt="" width="25px">
+            <img src="../src/images/logo-X.png" alt="" width="25px">                                 
+        </div>
+
+        <p>&copy; <span class="color-acento">Boni!</span> 2024</p>
+        
     </footer>
     
 </body>
